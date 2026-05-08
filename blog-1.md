@@ -141,8 +141,10 @@ These four principles – abstraction, encapsulation, inheritance and polymorphi
 **Abstraction** defines what something does, **encapsulation** protects how it does it (keeping it hidden), **inheritance** allows sharing of common parts, 
 and **polymorphism** allows for flexible behaviour when the code is actually running (it allows swapping). 
 
-```Ultimately, object-oriented programming is about creating code which is simpler to adapt. Encapsulation prevents errors from spreading through your program, 
-inheritance avoids repeating yourself, polymorphism removes the need for long strings of `if / else` statements to deal with each type of object, and 
-abstraction stops your code from being too dependent on the specifics of how things are done. ```
+```Ultimately, object-oriented programming is about creating code which is simpler to adapt. 
+Encapsulation prevents errors from spreading through your program, 
+inheritance avoids repeating yourself, 
+polymorphism removes the need for long strings of `if / else` statements to deal with each type of object, 
+and abstraction stops your code from being too dependent on the specifics of how things are done. ```
 
 
