@@ -116,6 +116,7 @@ We frequently use an interface or abstract class to set out what a class should 
 Think of driving a car. You don't need to understand all the inner workings of the engine, each of its functions or mechanisms, you simply need to know how to drive.
 
 Here's an example: the Logger interface says something needs to have a log method for showing a message. The application itself doesn't need to know how the logging happens, only that a message can be logged. The ConsoleLogger class implements the Logger interface and logs to the console.
+
 ```ts
 interface Logger {
   log(message: string): void;
@@ -128,13 +129,20 @@ class ConsoleLogger implements Logger {
 }
 ```
 
+## In a real project:
+
+- An abstract PaymentProcessor (Abstraction)
+- Each processor encapsulating its API key and credentials (Encapsulation)
+- Processors extending a shared base with validation logic (Inheritance)
+- A checkout service calling .processPayment() without knowing which processor it is (Polymorphism)
+
 
 These four principles – abstraction, encapsulation, inheritance and polymorphism – aren't used in isolation, they build on each other. 
 **Abstraction** defines what something does, **encapsulation** protects how it does it (keeping it hidden), **inheritance** allows sharing of common parts, 
 and **polymorphism** allows for flexible behaviour when the code is actually running (it allows swapping). 
 
-Ultimately, object-oriented programming is about creating code which is simpler to adapt. Encapsulation prevents errors from spreading through your program, 
-inheritance avoids repeating yourself, polymorphism removes the need for long strings of ` if / else ` statements to deal with each type of object, and 
-abstraction stops your code from being too dependent on the specifics of how things are done.
+```Ultimately, object-oriented programming is about creating code which is simpler to adapt. Encapsulation prevents errors from spreading through your program, 
+inheritance avoids repeating yourself, polymorphism removes the need for long strings of `if / else` statements to deal with each type of object, and 
+abstraction stops your code from being too dependent on the specifics of how things are done. ```
 
 
