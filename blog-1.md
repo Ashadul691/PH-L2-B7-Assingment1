@@ -109,7 +109,7 @@ makeAnimalSpeak(new Cat());
 ```
 
 
-## Abstraction(Hide coplex part, show essential part):
+## Abstraction(Hide complex part, show essential part):
 
 Abstraction is about hiding complications and only presenting the essential parts to the person using something. 
 We frequently use an interface or abstract class to set out what a class should do, but not how it should do it. 
